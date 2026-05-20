@@ -2,6 +2,35 @@
 
 All notable changes to Nova Agent Workflows should be recorded here.
 
+## 0.2.0-draft - 2026-05-20
+
+Nova Serious Workflow v1.5 alignment.
+
+Added:
+
+- six-layer serious workflow stack:
+  - Brain / context layer
+  - Ingestion / knowledge layer
+  - Planning / spec layer
+  - Task board / checklist layer
+  - Verification / risk gate layer
+  - Delivery / sync-back layer
+- planning templates:
+  - `templates/PRD.md`
+  - `templates/SPEC.md`
+  - `templates/ARCHITECTURE.md`
+  - `templates/AGENTS.md`
+- Codex and Claude Code adapter wording for the six-layer workflow
+- release-readiness update for the existing public repository state
+
+Safety:
+
+- no private memory export
+- no runtime logs
+- no private machine paths
+- no push, publish, release, or remote rewrite performed
+- release gate remains required after these edits
+
 ## 0.1.0-draft - 2026-05-20
 
 Initial local draft.

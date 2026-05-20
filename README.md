@@ -2,7 +2,7 @@
 
 Safe, evidence-first workflows for Codex, Claude Code, and long-running AI agents.
 
-Status: local draft v0.1.0. Do not publish until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
+Status: public draft v0.2.0-draft. Do not publish a new release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
 
 ## What This Is
 
@@ -13,6 +13,7 @@ Nova Agent Workflows is a small set of reusable operating patterns for AI coding
 - verify before claiming completion;
 - stop before risky actions;
 - hand off work concisely;
+- use a six-layer serious-work stack for larger projects;
 - continue work across Codex, Claude Code, or similar tools.
 
 ## What This Is Not
@@ -45,6 +46,10 @@ Start a governed project with:
 
 - `templates/TASK_BOARD.md`
 - `templates/TASK_CHECKLIST.md`
+- `templates/PRD.md`
+- `templates/SPEC.md`
+- `templates/ARCHITECTURE.md`
+- `templates/AGENTS.md`
 - `templates/WORK_LOG.md`
 - `templates/HANDOFF.md`
 
@@ -57,9 +62,9 @@ This project is designed to evolve. See `VERSIONING.md`.
 Current draft:
 
 ```text
-version: 0.1.0-draft
+version: 0.2.0-draft
 date: 2026-05-20
-scope: core workflows, Codex adapter, Claude Code adapter, templates, synthetic examples
+scope: Nova Serious Workflow v1.5 six-layer stack, Codex adapter, Claude Code adapter, planning templates, synthetic examples
 ```
 
 ## Safety
@@ -77,4 +82,4 @@ Release only when examples are synthetic, local paths are removed, no secrets ar
 
 See `RELEASE_READINESS.md`.
 
-This draft may be initialized as a local git repository for review, but creating a GitHub repository, adding a remote, pushing, publishing, or releasing requires explicit approval for the exact action.
+This draft may be used in a local git repository for review, but pushing, publishing, releasing, force-pushing, or changing account/repository settings requires explicit approval for the exact action.

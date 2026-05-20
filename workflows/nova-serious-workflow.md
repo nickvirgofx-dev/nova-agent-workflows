@@ -1,12 +1,69 @@
 # Nova Serious Workflow
 
-Use this workflow when an agent starts or continues serious work that needs memory, tasks, verification, and safe handoff.
+Use this workflow when an agent starts or continues serious work that needs context, tasks, verification, safe delivery, and sync-back.
 
 ## Core Rule
 
 Current user instruction, real files, tests, and runtime evidence outrank stored memory.
 
 Stored notes are orientation, not final truth.
+
+## Nova Serious Workflow v1.5: Six-Layer Stack
+
+Use the layers that fit the task. Small safe tasks may use a compact path, but meaningful work should still sync back to the project notes.
+
+### 1. Brain / Context Layer
+
+- Read the current user request first.
+- Read the smallest useful project context: current state, task board, checklist, decisions, and handoff.
+- Respect user preferences and project decisions, but verify real files/runtime before final claims.
+
+### 2. Ingestion / Knowledge Layer
+
+- Keep raw source material separate from processed notes.
+- Use an index or retrieval tool before opening large knowledge folders.
+- Do not scan raw or wiki folders wholesale.
+- Promote only evidence-backed learnings into stable project memory.
+
+Suggested generic shape:
+
+```text
+knowledge/
+  ingestion/
+    raw/
+    wiki/
+    index.md
+    log.md
+```
+
+### 3. Planning / Spec Layer
+
+- For substantial product/code/repo work, create only the planning files that help:
+  - `PRD.md`
+  - `SPEC.md`
+  - `ARCHITECTURE.md`
+  - `AGENTS.md`
+  - acceptance criteria
+- Tiny safe edits can use a short checklist instead of a full spec set.
+
+### 4. Task Board / Checklist Layer
+
+- Use explicit task IDs such as `T001`.
+- Use one canonical checklist with Markdown checkboxes.
+- Each task should include goal, done condition, verification, risk, and recommended intelligence level.
+- Tick tasks only after verification evidence exists.
+
+### 5. Verification / Risk Gate Layer
+
+- Match verification to the task: tests, smoke checks, UI/game probes, scrub, audit, or targeted inspection.
+- Stop before hard delete, broad rewrite, deploy, account/auth/payment/secret work, OS repair, or risky automation.
+- For public/repo work, run privacy and secret scans before release or push.
+
+### 6. Delivery + Sync-Back Layer
+
+- Use issues, implementation branches, pull requests, review/fix, and merge only when repo delivery is in scope.
+- Release/publish work needs changelog, version, release notes, public/private gate, and rollback note.
+- After local completion, PR, merge, release, or blocked work, sync result, decisions, lessons, bug patterns, next task, and dashboard/status updates back into project notes.
 
 ## Project Shape
 
@@ -22,6 +79,15 @@ HANDOFF.md
 ```
 
 Use existing project conventions if they are clearer.
+
+For larger repo work, add only the planning files that are useful:
+
+```text
+PRD.md
+SPEC.md
+ARCHITECTURE.md
+AGENTS.md
+```
 
 ## Task Rules
 
@@ -102,4 +168,3 @@ not tested:
 risks:
 next:
 ```
-

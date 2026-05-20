@@ -13,8 +13,9 @@ Do not delete, deploy, authenticate, publish, handle payments, use secrets, chan
 For serious work:
 
 1. Read the project entry files first.
-2. Use explicit task IDs and Markdown checkboxes.
-3. Preserve before cleanup or restructuring.
-4. Verify before marking complete.
-5. Keep the final handoff concise.
-
+2. Use the six-layer stack when useful: context, ingestion/knowledge, planning/spec, task board/checklist, verification/risk gate, delivery/sync-back.
+3. Use explicit task IDs and Markdown checkboxes.
+4. Preserve before cleanup or restructuring.
+5. Verify before marking complete.
+6. Keep the final handoff concise.
+7. Sync results and next tasks back into project notes.

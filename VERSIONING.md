@@ -23,31 +23,29 @@ Draft versions may use:
 ## Current Line
 
 ```text
-0.1.x: safety-first core workflows
+0.2.x: Nova Serious Workflow v1.5 six-layer stack
 ```
 
-Included in v0.1:
+Included in v0.2:
 
 - `nova-serious-workflow`
 - `nova-debug-review-gate`
 - `nova-board-finisher`
 - Codex skill adapter
 - Claude Code skill adapter
-- basic task/checklist/work-log/handoff templates
+- planning, task/checklist, work-log, and handoff templates
 - synthetic examples only
+- six-layer serious workflow: brain/context, ingestion/knowledge, planning/spec, task/checklist, verification/risk gate, delivery/sync-back
 
 ## Future Upgrade Track
 
-Potential v0.2 additions:
+Potential v0.3 additions:
 
 - HTML planning artifact workflow
 - public-safe postmortem template
 - graph/link hygiene workflow
 - token/context budget workflow
 - optional release checklist automation that only scans local files
-
-Potential v0.3 additions:
-
 - browser-game verification adapter
 - Obsidian librarian adapter
 - cross-agent handoff examples
@@ -108,6 +106,19 @@ VERSIONING.md
 If the change improves Nova's overall brain capability, also update the Nova Brain Evolution Dashboard in the private runtime.
 
 Never publish, push, create a remote repository, or run account/auth/payment/secret actions as part of version alignment.
+
+## Workflow Revision Rule
+
+Public package versions and workflow revisions are tracked separately.
+
+Current mapping:
+
+```text
+package: 0.2.0-draft
+nova-serious-workflow: v1.5
+```
+
+Use package semver for public release changes. Use workflow revision labels when the operating model changes.
 
 ## Compatibility Rule
 
