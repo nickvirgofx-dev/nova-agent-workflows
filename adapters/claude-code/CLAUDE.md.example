@@ -1,0 +1,20 @@
+# Project Agent Guidance
+
+Use these workflows as project guidance:
+
+- `workflows/nova-serious-workflow.md`
+- `workflows/nova-debug-review-gate.md`
+- `workflows/nova-board-finisher.md`
+
+Current user instruction, real files, tests, and runtime evidence outrank these notes.
+
+Do not delete, deploy, authenticate, publish, handle payments, use secrets, change account state, run browser-account actions, install plugins/hooks/config, or run OS repair without explicit approval for the exact action.
+
+For serious work:
+
+1. Read the project entry files first.
+2. Use explicit task IDs and Markdown checkboxes.
+3. Preserve before cleanup or restructuring.
+4. Verify before marking complete.
+5. Keep the final handoff concise.
+

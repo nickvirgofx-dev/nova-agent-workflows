@@ -1,0 +1,35 @@
+# Local/editor state
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Logs and generated output
+*.log
+logs/
+reports/
+coverage/
+dist/
+build/
+
+# Dependency folders
+node_modules/
+.venv/
+venv/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Private runtime or vault exports should never be committed here.
+private-vault/
+local-runtime/
+runtime/
+private/
