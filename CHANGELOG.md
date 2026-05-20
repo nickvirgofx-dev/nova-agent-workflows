@@ -28,8 +28,9 @@ Safety:
 - no private memory export
 - no runtime logs
 - no private machine paths
-- no push, publish, release, or remote rewrite performed
-- release gate remains required after these edits
+- v0.2.0-draft was pushed to `main` after local scrub
+- no tagged release, package publication, deployment, or remote rewrite performed for v0.2.0-draft
+- release gate remains required before any tagged release or future risky public action
 
 ## 0.1.0-draft - 2026-05-20
 

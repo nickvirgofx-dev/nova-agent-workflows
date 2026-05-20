@@ -2,7 +2,7 @@
 
 Safe, evidence-first workflows for Codex, Claude Code, and long-running AI agents.
 
-Status: public draft v0.2.0-draft. Do not publish a new release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
+Status: public draft v0.2.0-draft on `main`. Do not publish a tagged release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
 
 ## What This Is
 
@@ -82,4 +82,4 @@ Release only when examples are synthetic, local paths are removed, no secrets ar
 
 See `RELEASE_READINESS.md`.
 
-This draft may be used in a local git repository for review, but pushing, publishing, releasing, force-pushing, or changing account/repository settings requires explicit approval for the exact action.
+This draft may be used from the public `main` branch for review. Future pushes, tagged releases, force-pushes, or repository/account setting changes require explicit approval for the exact action.
