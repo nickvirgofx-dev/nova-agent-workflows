@@ -1,19 +1,20 @@
 # Release Readiness
 
-Status: v0.2.0-draft is pushed to `main`. Tagged release remains approval-gated.
+Status: v0.2.1-draft is prepared for `main`. Tagged release remains approval-gated.
 
 ## Current State
 
 ```text
-version: 0.2.0-draft
-workflow_revision: nova-serious-workflow v1.5
+version: 0.2.1-draft
+workflow_revision: nova-serious-workflow v1.6
 repo_state: local branch tracks origin/main
 remote: https://github.com/nickvirgofx-dev/nova-agent-workflows
 published: repository exists
 push_performed_for_v0.2.0: yes
+push_performed_for_v0.2.1: yes, after local scrub and commit
 release_performed: no
 license: MIT, Copyright (c) 2026 Nova Agent Workflows
-current_commit: 74e497d Upgrade serious workflow to v1.5
+current_commit: see latest `main` commit for v0.2.1-draft
 ```
 
 ## Required Before Public Release
@@ -27,9 +28,10 @@ current_commit: 74e497d Upgrade serious workflow to v1.5
 ## Current Blockers
 
 - T056 local scrub passed for the v0.2.0-draft edits; see `safety/PUBLIC_EXPORT_SCRUB_REPORT_T056.md`.
-- Fresh cross-agent smoke review is required after the v0.2.0-draft edits.
-- Tagged release has not been approved for v0.2.0-draft.
-- Any push, publish, release, force-push, or remote rewrite requires explicit approval for the exact action.
+- T102 local scrub passed for the v0.2.1-draft edits; see `safety/PUBLIC_EXPORT_SCRUB_REPORT_T102.md`.
+- Fresh cross-agent smoke review is required before any tagged release.
+- Tagged release has not been approved for v0.2.1-draft.
+- Any publish, release, force-push, or remote rewrite requires explicit approval for the exact action.
 
 ## Safe Local Prep
 

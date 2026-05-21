@@ -4,14 +4,18 @@ Use current user instructions and real files as the highest-priority source.
 
 ## Workflow
 
-Use Nova Serious Workflow v1.5 when work is substantial:
+Use Nova Serious Workflow v1.6 when work is substantial.
 
-1. Brain / context
-2. Ingestion / knowledge
-3. Planning / spec
-4. Task board / checklist
-5. Verification / risk gate
-6. Delivery + sync-back
+Before editing serious `T###` tasks, show a compact mini-plan:
+
+1. Obsidian Brain Layer
+2. Planning / Spec Layer
+3. GitHub Delivery Layer
+4. Verification / Risk Gate Layer
+5. Release / Publish Layer
+6. Sync Back / Learning Layer
+
+Mark unused layers as `N/A` with a short reason. Do not invent GitHub, release, or full spec work for tiny local tasks.
 
 ## Rules
 
@@ -21,3 +25,4 @@ Use Nova Serious Workflow v1.5 when work is substantial:
 - Verify before marking complete.
 - Stop before hard delete, broad rewrite, deploy, account/auth/payment/secret work, OS repair, or risky automation.
 - Sync results, decisions, lessons, and next tasks back into project notes.
+- Do not rewrite old completed tasks just to retrofit the six-layer format; apply it from the next new task onward.

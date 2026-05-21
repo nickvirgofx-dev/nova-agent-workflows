@@ -23,7 +23,7 @@ Draft versions may use:
 ## Current Line
 
 ```text
-0.2.x: Nova Serious Workflow v1.5 six-layer stack
+0.2.x: Nova Serious Workflow v1.6 visible six-layer mini-plan
 ```
 
 Included in v0.2:
@@ -35,7 +35,7 @@ Included in v0.2:
 - Claude Code skill adapter
 - planning, task/checklist, work-log, and handoff templates
 - synthetic examples only
-- six-layer serious workflow: brain/context, ingestion/knowledge, planning/spec, task/checklist, verification/risk gate, delivery/sync-back
+- six-layer serious workflow: Obsidian Brain, Planning / Spec, GitHub Delivery, Verification / Risk Gate, Release / Publish, Sync Back / Learning
 
 ## Future Upgrade Track
 
@@ -114,8 +114,8 @@ Public package versions and workflow revisions are tracked separately.
 Current mapping:
 
 ```text
-package: 0.2.0-draft
-nova-serious-workflow: v1.5
+package: 0.2.1-draft
+nova-serious-workflow: v1.6
 ```
 
 Use package semver for public release changes. Use workflow revision labels when the operating model changes.

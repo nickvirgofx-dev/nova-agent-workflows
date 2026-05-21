@@ -2,7 +2,7 @@
 
 Safe, evidence-first workflows for Codex, Claude Code, and long-running AI agents.
 
-Status: public draft v0.2.0-draft on `main`. Do not publish a tagged release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
+Status: public draft v0.2.1-draft on `main`. Do not publish a tagged release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
 
 ## What This Is
 
@@ -13,7 +13,7 @@ Nova Agent Workflows is a small set of reusable operating patterns for AI coding
 - verify before claiming completion;
 - stop before risky actions;
 - hand off work concisely;
-- use a six-layer serious-work stack for larger projects;
+- show a visible six-layer mini-plan for serious work;
 - continue work across Codex, Claude Code, or similar tools.
 
 ## What This Is Not
@@ -62,10 +62,19 @@ This project is designed to evolve. See `VERSIONING.md`.
 Current draft:
 
 ```text
-version: 0.2.0-draft
-date: 2026-05-20
-scope: Nova Serious Workflow v1.5 six-layer stack, Codex adapter, Claude Code adapter, planning templates, synthetic examples
+version: 0.2.1-draft
+date: 2026-05-21
+scope: Nova Serious Workflow v1.6 visible six-layer mini-plan, Codex adapter, Claude Code adapter, planning templates, synthetic examples
 ```
+
+Nova Serious Workflow v1.6 uses this layer map:
+
+1. Obsidian Brain Layer
+2. Planning / Spec Layer
+3. GitHub Delivery Layer
+4. Verification / Risk Gate Layer
+5. Release / Publish Layer
+6. Sync Back / Learning Layer
 
 ## Safety
 

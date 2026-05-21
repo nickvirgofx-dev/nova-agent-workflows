@@ -2,6 +2,31 @@
 
 All notable changes to Nova Agent Workflows should be recorded here.
 
+## 0.2.1-draft - 2026-05-21
+
+Nova Serious Workflow v1.6 mini-plan alignment.
+
+Updated:
+
+- required a visible six-layer mini-plan before serious `T###` work
+- aligned the six layers to:
+  - Obsidian Brain Layer
+  - Planning / Spec Layer
+  - GitHub Delivery Layer
+  - Verification / Risk Gate Layer
+  - Release / Publish Layer
+  - Sync Back / Learning Layer
+- clarified that unused layers should be marked `N/A` instead of inventing GitHub, release, or spec work
+- added a legacy project alignment rule: do not rewrite old completed tasks just to retrofit the new format
+- updated Codex, Claude Code, board-finisher, and project guidance wording
+
+Safety:
+
+- no private memory export
+- no runtime logs
+- no private machine paths
+- no tagged release, package publication, deployment, force-push, or remote rewrite performed for v0.2.1-draft
+
 ## 0.2.0-draft - 2026-05-20
 
 Nova Serious Workflow v1.5 alignment.

@@ -1,6 +1,6 @@
 ---
 name: nova-serious-workflow
-description: Use when Claude Code starts or continues serious project work with Nova Serious Workflow v1.5: context, ingestion/knowledge, planning/spec, task board/checklist, verification/risk gate, and delivery/sync-back.
+description: Use when Claude Code starts or continues serious project work with Nova Serious Workflow v1.6: Obsidian brain/context, planning/spec, GitHub delivery, verification/risk gate, release/publish, and sync-back/learning.
 ---
 
 # Nova Serious Workflow for Claude Code
@@ -12,7 +12,9 @@ Claude Code usage notes:
 - Keep project guidance small and local to the project.
 - Do not assume a private vault or external memory exists.
 - Prefer real files, tests, and command output over stored notes.
-- Use the six-layer stack for substantial work, but keep tiny safe tasks lightweight.
+- Show a six-layer mini-plan before editing serious tasks: Obsidian Brain, Planning / Spec, GitHub Delivery, Verification / Risk Gate, Release / Publish, and Sync Back / Learning.
+- Mark unused layers as `N/A` with a short reason; do not invent specs, GitHub issues, PRs, releases, or publishing for tiny local work.
 - Keep task boards/checklists readable for a human.
 - Do not add startup hooks or automatic recurring actions from this skill.
 - Sync result, decisions, lessons, bug patterns, and next tasks back into project notes.
+- Do not rewrite old completed tasks just to retrofit the six-layer format; apply the mini-plan from the next new task onward.

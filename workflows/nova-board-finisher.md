@@ -10,7 +10,25 @@ This is not permission to bypass risk gates.
 2. Read current state, board, checklist, decision log, and handoff if present.
 3. Build a short queue from open tasks only.
 4. Skip complete, withdrawn, archived, or blocked tasks.
-5. Announce the first slice and stop rules.
+5. Announce the first slice with the required Nova Serious Workflow mini-plan and stop rules.
+
+## Required Mini-Plan
+
+Before editing files, running implementation, or marking a task complete, show:
+
+```text
+Nova Serious Workflow mini-plan
+1. Obsidian Brain Layer: read/update <exact files>
+2. Planning / Spec Layer: <PRD/SPEC/ARCHITECTURE/AGENTS/acceptance criteria or N/A because ...>
+3. GitHub Delivery Layer: <issues/branch/PR/review/merge or N/A because local-only ...>
+4. Verification / Risk Gate Layer: <tests/smoke/Sentinel/scrub/audit/security/stop rules>
+5. Release / Publish Layer: <changelog/version/release notes/public-private/rollback or N/A because not publishing ...>
+6. Sync Back / Learning Layer: <result/decision/lesson/bug/next/status files>
+Recommended intelligence: <low|medium|high|xhigh>
+Stop rules: <exact risky actions that will pause>
+```
+
+If a layer is not used, mark it `N/A` with a short reason. Do not create specs, GitHub issues, PRs, releases, or publishing work just to fill the template.
 
 ## Task Selection
 
@@ -22,6 +40,15 @@ Priority:
 4. cleanup/audit tasks after active project work.
 
 Do not create a new task ID unless new work appears.
+
+## Legacy Project Alignment
+
+Do not reopen or rewrite old completed tasks just to retrofit the six-layer format.
+
+- Treat completed tasks as valid if they have a clear result, project-state/work-log evidence, and verification.
+- Apply the six-layer mini-plan from the next new task onward.
+- Create a one-time alignment pass only when an old important project is active again or missing structure blocks safe continuation.
+- Alignment must be preserve-first, small, and gap-filling only.
 
 ## Completion Loop
 
@@ -56,4 +83,3 @@ files changed:
 verification:
 next safe task:
 ```
-
