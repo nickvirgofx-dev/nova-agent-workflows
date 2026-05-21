@@ -15,3 +15,5 @@ For Codex:
 4. Update the board/checklist/current state.
 5. Continue only while tasks are safe and verification passes.
 6. Stop if approval, credentials, deployment, payment/auth, secrets, OS repair, hard delete, broad rewrite, or ambiguous task truth appears.
+7. For GitHub delivery tasks, keep one approved issue or task as the unit of work.
+8. Stop before creating issues, pushing commits, opening PRs, marking PRs ready, merging, publishing, deploying, changing repo settings, force-pushing, or rewriting remote history unless the user explicitly approves that exact action.

@@ -61,6 +61,17 @@ For each safe task:
 5. update checklist, board, current state, and handoff;
 6. continue only if verification passed and no risk gate is hit.
 
+## GitHub Delivery Guard
+
+When a board task points to GitHub issues, branches, PRs, releases, or public repo updates:
+
+1. Confirm the exact issue, branch, PR, release, or repo scope.
+2. Keep one approved issue or task as the unit of work.
+3. If the next step is remote action, stop and request exact approval.
+4. If approval is missing, create or update a blocked task with the exact approval needed instead of continuing silently.
+
+Remote actions include creating issues, pushing commits, opening PRs, marking PRs ready, merging, publishing, deploying, changing repo settings, force-pushing, or rewriting remote history.
+
 ## Stop Conditions
 
 Stop and report `blocked` when:

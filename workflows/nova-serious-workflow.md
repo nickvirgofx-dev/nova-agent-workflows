@@ -8,9 +8,31 @@ Current user instruction, real files, tests, and runtime evidence outrank stored
 
 Stored notes are orientation, not final truth.
 
-## Nova Serious Workflow v1.6: Six-Layer Stack
+## Nova Serious Workflow v1.7: Six-Layer Stack
 
 Use the user-approved six-layer stack for serious work. Small safe tasks may mark irrelevant layers as `N/A`, but meaningful work should still sync back to project notes.
+
+## Planner / Orchestrator / Review Overlay
+
+Use this overlay when serious work involves new apps, feature planning, GitHub delivery, PR review, or unclear goals. It borrows public-safe patterns from planner, feature-planner, implementation-orchestrator, review, and clarification workflows without granting extra permissions.
+
+Adopted patterns:
+
+- Assumptions first: name what you know, what you do not know, and what evidence will settle it.
+- Simple first: choose the smallest design that can satisfy the goal and acceptance criteria.
+- New app planning: create concise `README.md`, `PRD.md`, `SPEC.md`, `ARCHITECTURE.md`, `AGENTS.md`, and an issue plan only when they help the work.
+- Existing feature planning: split one feature into small dependency-ordered tasks or issues.
+- Implementation orchestration: one approved issue becomes one focused branch or PR, followed by checks, review/fix, and user QA handoff.
+- Outside review: ask whether the change should exist, whether there is a simpler path, and whether the real code path supports the diff.
+- Clarification: if the plan is blurry, ask one plain-language question at a time and include the recommended answer.
+
+Hard gates:
+
+- Do not create GitHub issues until the user approves the issue plan.
+- Do not push, force-push, open PRs, mark PRs ready, merge, publish, deploy, or change repository settings without explicit approval for that exact action.
+- Do not implement vague issues. Clarify goal, non-goals, acceptance criteria, validation, and manual QA first.
+- Do not rely on chat memory for repo work. Re-read repo docs, the current issue, linked dependency issues, and relevant previous PRs when available.
+- If a referenced helper workflow is unavailable, use the available docs and ask the smallest useful clarification instead of inventing hidden automation.
 
 ### Required Mini-Plan
 

@@ -1,6 +1,6 @@
 ---
 name: nova-serious-workflow
-description: Use when starting or continuing a serious project with Nova Serious Workflow v1.6: Obsidian brain/context, planning/spec, GitHub delivery, verification/risk gate, release/publish, and sync-back/learning.
+description: Use when starting or continuing a serious project with Nova Serious Workflow v1.7: Obsidian brain/context, planning/spec, GitHub delivery, verification/risk gate, release/publish, sync-back/learning, and planner/orchestrator/review gates.
 ---
 
 # Nova Serious Workflow
@@ -26,6 +26,13 @@ For Codex:
 9. Verify before marking complete.
 10. Sync results, decisions, lessons, bug patterns, and next tasks back into project notes.
 11. Do not rewrite old completed tasks just to retrofit the six-layer format; apply the mini-plan from the next new task onward.
+12. For app, feature, GitHub, or PR work, use the planner/orchestrator/review overlay:
+   - state assumptions and acceptance criteria;
+   - keep specs and issues small;
+   - use one approved issue per branch or PR;
+   - review whether a simpler path exists;
+   - ask one plain-language clarification when the goal is blurry.
+13. Do not create GitHub issues, push, open PRs, mark PRs ready, merge, publish, deploy, or change repo settings without explicit approval for that exact action.
 
 Final report:
 

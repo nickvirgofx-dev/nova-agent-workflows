@@ -14,3 +14,5 @@ Claude Code usage notes:
 - Mark done only after verification.
 - Keep handoff short enough for the next agent to use.
 - Stop when approval or risky systems are required.
+- For GitHub delivery tasks, keep one approved issue or task as the unit of work.
+- Stop before creating issues, pushing commits, opening PRs, marking PRs ready, merging, publishing, deploying, changing repo settings, force-pushing, or rewriting remote history unless the user explicitly approves that exact action.

@@ -2,6 +2,30 @@
 
 All notable changes to Nova Agent Workflows should be recorded here.
 
+## 0.2.2-draft - 2026-05-21
+
+Nova Serious Workflow v1.7 planner/orchestrator/review overlay.
+
+Added:
+
+- public-safe planner/orchestrator/review overlay for serious app, feature, GitHub, and PR work
+- assumptions-first and simple-first guidance
+- new-app planning pattern: concise project docs plus approved issue plan when useful
+- existing-feature planning pattern: small dependency-ordered tasks or issues
+- implementation delivery pattern: one approved issue -> one branch or PR -> checks -> review/fix -> user QA handoff
+- outside-review pattern: question whether the change should exist, whether a simpler path exists, and whether the real code path supports the diff
+- clarification pattern: ask one plain-language question when the goal is blurry
+- board-finisher GitHub delivery guard for remote actions
+
+Safety:
+
+- no private memory export
+- no runtime logs
+- no private machine paths
+- no archived skill code copied into the public pack
+- no GitHub issue creation automation added
+- no tagged release, package publication, deployment, force-push, or remote rewrite performed for v0.2.2-draft
+
 ## 0.2.1-draft - 2026-05-21
 
 Nova Serious Workflow v1.6 mini-plan alignment.

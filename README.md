@@ -2,7 +2,7 @@
 
 Safe, evidence-first workflows for Codex, Claude Code, and long-running AI agents.
 
-Status: public draft v0.2.1-draft on `main`. Do not publish a tagged release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
+Status: public draft v0.2.2-draft on `main`. Do not publish a tagged release until the public scrub checklist, pre-publish release gate, and cross-agent smoke review pass in the same work session.
 
 ## What This Is
 
@@ -14,6 +14,7 @@ Nova Agent Workflows is a small set of reusable operating patterns for AI coding
 - stop before risky actions;
 - hand off work concisely;
 - show a visible six-layer mini-plan for serious work;
+- borrow planner/orchestrator/review patterns without granting automatic GitHub permissions;
 - continue work across Codex, Claude Code, or similar tools.
 
 ## What This Is Not
@@ -62,12 +63,12 @@ This project is designed to evolve. See `VERSIONING.md`.
 Current draft:
 
 ```text
-version: 0.2.1-draft
+version: 0.2.2-draft
 date: 2026-05-21
-scope: Nova Serious Workflow v1.6 visible six-layer mini-plan, Codex adapter, Claude Code adapter, planning templates, synthetic examples
+scope: Nova Serious Workflow v1.7 visible six-layer mini-plan plus planner/orchestrator/review overlay, Codex adapter, Claude Code adapter, planning templates, synthetic examples
 ```
 
-Nova Serious Workflow v1.6 uses this layer map:
+Nova Serious Workflow v1.7 uses this layer map:
 
 1. Obsidian Brain Layer
 2. Planning / Spec Layer
@@ -75,6 +76,14 @@ Nova Serious Workflow v1.6 uses this layer map:
 4. Verification / Risk Gate Layer
 5. Release / Publish Layer
 6. Sync Back / Learning Layer
+
+v1.7 adds a public-safe overlay for using planner, feature-planning, implementation-orchestration, review, and clarification patterns:
+
+- plan new apps or features as small, reviewable specs and issue plans;
+- implement one approved issue at a time on a branch or PR;
+- review from the outside before accepting the change;
+- ask one plain-language question when the goal is blurry;
+- keep every GitHub or publish action behind explicit user approval.
 
 ## Safety
 
