@@ -12,6 +12,29 @@ This is not permission to bypass risk gates.
 4. Skip complete, withdrawn, archived, or blocked tasks.
 5. Announce the first slice with the required Nova Serious Workflow mini-plan and stop rules.
 
+## Nova v1.8 Gates
+
+Before board-draining edits, satisfy a compact context contract:
+
+```text
+user_goal:
+project:
+primary_state_files:
+exact_source_files:
+runtime_or_repo_evidence:
+verification_target:
+excluded_context:
+stop_rules:
+```
+
+Use a runtime harness verdict before meaningful action:
+
+```text
+allow | warn | review | block
+```
+
+Risky actions require exact user approval. Same-root-cause retry budget is `2`. Long-running or handoff-heavy board work should record compact events with action, result, evidence, changed files, verification, next state, and next action.
+
 ## Required Mini-Plan
 
 Before editing files, running implementation, or marking a task complete, show:

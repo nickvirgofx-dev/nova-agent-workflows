@@ -23,10 +23,10 @@ Draft versions may use:
 ## Current Line
 
 ```text
-0.2.x: Nova Serious Workflow v1.7 visible six-layer mini-plan plus planner/orchestrator/review overlay
+0.3.x: Nova Serious Workflow v1.8 context contract, Goal/Rider task framing, structured risk approval, error budget, task-thread events, runtime harness verdicts, and agentic delivery chain
 ```
 
-Included in v0.2:
+Included in v0.3:
 
 - `nova-serious-workflow`
 - `nova-debug-review-gate`
@@ -37,10 +37,17 @@ Included in v0.2:
 - synthetic examples only
 - six-layer serious workflow: Obsidian Brain, Planning / Spec, GitHub Delivery, Verification / Risk Gate, Release / Publish, Sync Back / Learning
 - planner/orchestrator/review overlay for app planning, feature planning, one-issue delivery, outside review, and clarification gates
+- context contract before meaningful edits
+- Goal/Rider task shape
+- structured risk proposal before risky action
+- allow/warn/review/block action verdicts
+- repeated-failure retry budget
+- compact task-thread events for handoff-heavy work
+- agentic delivery chain from clarification to spec, issue plan, optional TDD, and architecture review
 
 ## Future Upgrade Track
 
-Potential v0.3 additions:
+Potential v0.4 additions:
 
 - HTML planning artifact workflow
 - public-safe postmortem template
@@ -115,8 +122,8 @@ Public package versions and workflow revisions are tracked separately.
 Current mapping:
 
 ```text
-package: 0.2.2-draft
-nova-serious-workflow: v1.7
+package: 0.3.0-draft
+nova-serious-workflow: v1.8
 ```
 
 Use package semver for public release changes. Use workflow revision labels when the operating model changes.

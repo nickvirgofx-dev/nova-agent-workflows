@@ -2,6 +2,30 @@
 
 All notable changes to Nova Agent Workflows should be recorded here.
 
+## 0.3.0-draft - 2026-05-26
+
+Nova Serious Workflow v1.8 public-safe governance update.
+
+Added:
+
+- context contract before meaningful edits
+- Goal/Rider task framing for serious `T###` work
+- structured risk approval pattern for risky actions
+- runtime harness action flow: context -> allowed surfaces -> proposed action -> verdict -> execution -> evidence -> sync-back
+- verdict vocabulary: `allow`, `warn`, `review`, `block`
+- retry budget rule for repeated same-root-cause failures
+- task-thread event shape for long-running, handoff-heavy, or multi-agent work
+- agentic delivery chain: clarify/domain model -> PRD or compact spec -> vertical-slice issue plan -> optional TDD -> architecture review
+
+Safety:
+
+- no private memory export
+- no runtime logs
+- no private machine paths
+- no hooks, MCP registration, installers, package scripts, account actions, deploys, or secret handling added
+- no tagged release, package publication, deployment, force-push, remote rewrite, or repository setting change performed for v0.3.0-draft
+- push to GitHub remains blocked until exact user approval after fresh scrub and smoke review
+
 ## 0.2.2-draft - 2026-05-21
 
 Nova Serious Workflow v1.7 planner/orchestrator/review overlay.

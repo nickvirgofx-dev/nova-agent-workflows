@@ -8,7 +8,39 @@ Current user instruction, real files, tests, and runtime evidence outrank stored
 
 Stored notes are orientation, not final truth.
 
-## Nova Serious Workflow v1.7: Six-Layer Stack
+## Nova Serious Workflow v1.8: Context Contract
+
+Before meaningful edits, satisfy a compact context contract:
+
+```text
+user_goal:
+project:
+primary_state_files:
+exact_source_files:
+runtime_or_repo_evidence:
+verification_target:
+excluded_context:
+stop_rules:
+```
+
+This prevents broad context scans and makes assumptions visible. If a fact can be checked in files, tests, logs, or runtime output, check it instead of relying on memory.
+
+## Goal / Rider Task Framing
+
+Every serious task should have:
+
+```text
+Goal:
+Rider:
+Done when:
+Verification:
+Stop rule:
+Recommended intelligence:
+```
+
+The Goal states the outcome. The Rider states boundaries, allowed surfaces, verification, and stop conditions.
+
+## Nova Serious Workflow v1.8: Six-Layer Stack
 
 Use the user-approved six-layer stack for serious work. Small safe tasks may mark irrelevant layers as `N/A`, but meaningful work should still sync back to project notes.
 
@@ -33,6 +65,55 @@ Hard gates:
 - Do not implement vague issues. Clarify goal, non-goals, acceptance criteria, validation, and manual QA first.
 - Do not rely on chat memory for repo work. Re-read repo docs, the current issue, linked dependency issues, and relevant previous PRs when available.
 - If a referenced helper workflow is unavailable, use the available docs and ask the smallest useful clarification instead of inventing hidden automation.
+
+## Runtime Harness Verdicts
+
+Before meaningful action, classify it through this frame:
+
+```text
+context -> allowed surfaces -> proposed action -> verdict -> execution -> evidence -> sync-back
+```
+
+Use one verdict:
+
+```text
+allow: low-risk, in-scope, reversible, or already approved
+warn: bounded but potentially noisy; state risk and verification first
+review: ambiguous, broad, user-impacting, or boundary-crossing; ask or narrow
+block: not approved; do not execute
+```
+
+Blocked surfaces include deploy, public push, hard delete, secrets, account/OAuth/payment, OS repair, MCP/hook/global config, database/index migration, external runtime activation, and broad stable-memory rewrite without exact approval.
+
+## Error Budget And Task Events
+
+- Same-root-cause retries are limited to `2`. After that, stop with the exact command/action, error, hypothesis, evidence checked, safer next check, and continue/stop decision.
+- Long-running, handoff-heavy, or multi-agent work should record compact task-thread events:
+
+```text
+event_type:
+action:
+result:
+evidence:
+changed_files:
+verification:
+next_state:
+next_action:
+```
+
+## Agentic Delivery Chain
+
+Use only as much chain as the task needs:
+
+```text
+unclear idea -> clarification / domain model check
+resolved context -> PRD or compact spec
+PRD/spec -> vertical-slice issue plan
+issue-sized code work -> optional TDD loop
+after development surge -> architecture review
+```
+
+Do not force the full chain onto tiny local edits. Remote issue creation, branch work, PRs, pushes, merges, releases, and repo settings remain approval-gated.
 
 ### Required Mini-Plan
 

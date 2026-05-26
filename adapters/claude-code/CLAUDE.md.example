@@ -13,7 +13,7 @@ Do not delete, deploy, authenticate, publish, handle payments, use secrets, chan
 For serious work:
 
 1. Read the project entry files first.
-2. Show a Nova Serious Workflow v1.7 mini-plan before editing serious `T###` tasks:
+2. Show a Nova Serious Workflow v1.8 mini-plan before editing serious `T###` tasks:
    - Obsidian Brain Layer
    - Planning / Spec Layer
    - GitHub Delivery Layer
@@ -28,4 +28,8 @@ For serious work:
 8. Mark unused layers as `N/A`; do not invent GitHub, release, or full spec work for tiny local tasks.
 9. Do not rewrite old completed tasks just to retrofit the six-layer format.
 10. For app, feature, GitHub, or PR work, use the planner/orchestrator/review overlay: assumptions first, small specs/issues, one approved issue per branch or PR, simpler-option review, and one plain-language clarification when the goal is blurry.
-11. Do not create GitHub issues, push, open PRs, mark PRs ready, merge, publish, deploy, or change repo settings without explicit approval for that exact action.
+11. Before meaningful edits, state a compact context contract.
+12. Frame serious tasks with Goal and Rider.
+13. Before meaningful actions, classify the action as `allow`, `warn`, `review`, or `block`.
+14. Stop after two same-root-cause failures and report exact command/action, error, evidence checked, and next safer check.
+15. Do not create GitHub issues, push, open PRs, mark PRs ready, merge, publish, deploy, register MCP, enable hooks, change global config, run database/index migrations, or change repo settings without explicit approval for that exact action.
